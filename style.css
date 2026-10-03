@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 1000px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.product {
+    display: flex;
+    gap: 30px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+.product img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.info {
+    width: 50%;
+}
+
+.info h2 {
+    font-size: 28px;
+}
+
+.price {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    background: #ee4d2d;
+
+    color: white;
+
+    border: 0;
+
+    padding: 15px 30px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d63f22;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .product {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .product img {
+        width: 45%;
+    }
+
+    .info {
+        width: 55%;
+    }
+
+    .info h2 {
+        font-size: 22px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    button {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .product {
+        display: block;
+        padding: 15px;
+    }
+
+    .product img {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .info h2 {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .description {
+        display: none;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+}
+
+@media print {
+
+    .price {
+        display: none;
+    }
+
+}
